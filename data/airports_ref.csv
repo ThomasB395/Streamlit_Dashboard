@@ -1,0 +1,205 @@
+apt,name,municipality,country,region,region_name,continent,lat,lon,source
+BIKF,Keflavik International Airport,Reykjavík,IS,IS-2,,EU,63.985,-22.6056,OurAirports
+BKPR,Priština Adem Jashari International Airport,Prishtina,XK,XK-01,,EU,42.5728,21.0358,OurAirports
+CYUL,Montreal / Pierre Elliott Trudeau International Airport,Montréal,CA,CA-QC,,NA,45.46784,-73.74229,OurAirports
+CYVR,Vancouver International Airport,Vancouver,CA,CA-BC,,NA,49.1939,-123.184,OurAirports
+CYYZ,Toronto Pearson International Airport,Toronto,CA,CA-ON,,NA,43.67594,-79.62942,OurAirports
+DAAE,Soummam–Abane Ramdane Airport,Béjaïa,DZ,DZ-06,,AF,36.71255,5.06991,OurAirports
+DAAG,Houari Boumediene Airport,Algiers,DZ,DZ-16,,AF,36.69389,3.21453,OurAirports
+DABC,Mohamed Boudiaf International Airport,Constantine,DZ,DZ-25,,AF,36.276,6.62039,OurAirports
+DAOO,Oran Es-Sénia (Ahmed Ben Bella) International Airport,Es-Sénia,DZ,DZ-31,,AF,35.62065,-0.62249,OurAirports
+DIAP,Félix-Houphouët-Boigny International Airport,Abidjan,CI,CI-AB,,AF,5.26139,-3.92629,OurAirports
+DTMB,Monastir Habib Bourguiba International Airport,Monastir,TN,TN-52,,AF,35.7581,10.7547,OurAirports
+DTTA,Tunis Carthage International Airport,Tunis,TN,TN-11,,AF,36.851,10.2272,OurAirports
+DTTJ,Djerba Zarzis International Airport,Mellita,TN,TN-82,,AF,33.87372,10.7773,OurAirports
+EBBR,Brussels Airport,Zaventem,BE,BE-VBR,,EU,50.9014,4.48444,OurAirports
+EBCI,Brussels South Charleroi Airport,Charleroi,BE,BE-WHT,,EU,50.46196,4.45956,OurAirports
+EBLG,Liège Airport,Grâce-Hollogne,BE,BE-WLG,,EU,50.63857,5.4439,OurAirports
+EDDB,Berlin Brandenburg Airport,Berlin,DE,DE-BR,,EU,52.36174,13.50234,OurAirports
+EDDF,Frankfurt Main Airport,Frankfurt am Main,DE,DE-HE,,EU,50.02671,8.55835,OurAirports
+EDDH,Hamburg Helmut Schmidt Airport,Hamburg,DE,DE-HH,,EU,53.6304,9.98823,OurAirports
+EDDK,Cologne Bonn Airport,Köln (Cologne),DE,DE-NW,,EU,50.8659,7.14274,OurAirports
+EDDL,Düsseldorf Airport,Düsseldorf,DE,DE-NW,,EU,51.2895,6.76678,OurAirports
+EDDM,Munich Airport,Munich,DE,DE-BY,,EU,48.3538,11.7861,OurAirports
+EDDN,Nuremberg Airport,Nuremberg,DE,DE-BY,,EU,49.4987,11.07806,OurAirports
+EDDP,Leipzig/Halle Airport,Schkeuditz,DE,DE-SN,,EU,51.42066,12.2327,OurAirports
+EDDS,Stuttgart Airport,Stuttgart,DE,DE-BW,,EU,48.6899,9.22196,OurAirports
+EDDT,Berlin Tegel Airport,Berlin,DE,DE-BE,,EU,52.5597,13.2877,manual
+EDDV,Hannover Airport,Hannover,DE,DE-NI,,EU,52.4611,9.68508,OurAirports
+EDHI,Hamburg-Finkenwerder Airport,Hamburg,DE,DE-HH,,EU,53.53528,9.83556,OurAirports
+EFHK,Helsinki Vantaa Airport,Helsinki (Vantaa),FI,FI-18,,EU,60.31836,24.96334,OurAirports
+EFRO,Rovaniemi Airport,Rovaniemi,FI,FI-10,,EU,66.56333,25.82975,OurAirports
+EGAA,Belfast International Airport,Belfast,GB,GB-NIR,,EU,54.6575,-6.21583,OurAirports
+EGBB,Birmingham Airport,"Birmingham, West Midlands",GB,GB-ENG,,EU,52.4539,-1.74803,OurAirports
+EGCC,Manchester Airport,"Manchester, Greater Manchester",GB,GB-ENG,,EU,53.34938,-2.27952,OurAirports
+EGGD,Bristol Airport,Bristol,GB,GB-ENG,,EU,51.38233,-2.71645,OurAirports
+EGGP,Liverpool John Lennon Airport,Liverpool,GB,GB-ENG,,EU,53.33486,-2.84964,OurAirports
+EGGW,London Luton Airport,"Luton, Luton",GB,GB-ENG,,EU,51.8747,-0.36833,OurAirports
+EGKK,London Gatwick Airport,London,GB,GB-ENG,,EU,51.14874,-0.18574,OurAirports
+EGLL,London Heathrow Airport,London,GB,GB-ENG,,EU,51.47075,-0.45991,OurAirports
+EGNT,Newcastle International Airport,"Newcastle upon Tyne, Tyne and Wear",GB,GB-ENG,,EU,55.03796,-1.68958,OurAirports
+EGNX,East Midlands Airport,"Nottingham, Leicestershire",GB,GB-ENG,,EU,52.8311,-1.32806,OurAirports
+EGPF,Glasgow Airport,Glasgow,GB,GB-SCT,,EU,55.8719,-4.43306,OurAirports
+EGPH,Edinburgh Airport,"Ingliston, Edinburgh",GB,GB-SCT,,EU,55.95014,-3.37229,OurAirports
+EGSS,London Stansted Airport,"London, Essex",GB,GB-ENG,,EU,51.885,0.235,OurAirports
+EHAM,Amsterdam Airport Schiphol,Amsterdam,NL,NL-NH,,EU,52.3086,4.76389,OurAirports
+EICK,Cork International Airport,Cork,IE,IE-CO,,EU,51.8413,-8.49111,OurAirports
+EIDW,Dublin Airport,Dublin,IE,IE-D,,EU,53.42871,-6.26212,OurAirports
+EKBI,Billund Airport,Billund,DK,DK-83,,EU,55.74034,9.15702,OurAirports
+EKCH,Copenhagen Kastrup Airport,Copenhagen,DK,DK-84,,EU,55.6179,12.656,OurAirports
+ELLX,Luxembourg-Findel International Airport,Luxembourg,LU,LU-L,,EU,49.62684,6.21213,OurAirports
+ENBR,"Bergen Airport, Flesland",Bergen,NO,NO-46,,EU,60.2934,5.21814,OurAirports
+ENGM,Oslo-Gardermoen International Airport,Oslo (Gardermoen),NO,NO-32,,EU,60.1939,11.1004,OurAirports
+EPKK,Kraków John Paul II International Airport,Balice,PL,PL-MA,,EU,50.0777,19.7848,OurAirports
+EPKT,Katowice Wojciech Korfanty International Airport,Katowice,PL,PL-SL,,EU,50.47602,19.0807,OurAirports
+EPWA,Warsaw Chopin Airport,Warsaw,PL,PL-MZ,,EU,52.1657,20.9671,OurAirports
+ESGG,Göteborg Landvetter Airport,Göteborg,SE,SE-Q,,EU,57.6628,12.2798,OurAirports
+ESSA,Stockholm-Arlanda Airport,Stockholm,SE,SE-AB,,EU,59.64849,17.92883,OurAirports
+FIMP,Sir Seewoosagur Ramgoolam International Airport,Plaine Magnien,MU,MU-GP,,AF,-20.4302,57.6836,OurAirports
+FMCZ,Dzaoudzi Pamandzi International Airport,Dzaoudzi,YT,YT-U-A,Mayotte,AF,-12.80932,45.28182,OurAirports
+FMEE,Roland Garros Airport,Sainte-Marie,RE,RE-SD,La Réunion,AF,-20.89009,55.51889,OurAirports
+FMMI,Ivato International Airport,Antananarivo,MG,MG-T,,AF,-18.7969,47.4788,OurAirports
+GCFV,Fuerteventura Airport,El Matorral,ES,ES-CN,,AF,28.4527,-13.8638,OurAirports
+GCLP,Gran Canaria Airport,Gran Canaria Island,ES,ES-CN,,AF,27.9319,-15.3866,OurAirports
+GCTS,Tenerife Sur Airport,Tenerife,ES,ES-CN,,AF,28.0445,-16.5725,OurAirports
+GMAD,Al Massira Airport,Agadir (Temsia),MA,MA-09,,AF,30.32248,-9.412,OurAirports
+GMFF,Fes Saïss International Airport,Saïss,MA,MA-03,,AF,33.9273,-4.97796,OurAirports
+GMFO,Oujda Angads Airport,Ahl Angad,MA,MA-02,,AF,34.78956,-1.92604,OurAirports
+GMME,Rabat-Salé Airport,Rabat,MA,MA-04,,AF,34.0515,-6.75152,OurAirports
+GMMN,Mohammed V International Airport,Casablanca,MA,MA-06,,AF,33.3675,-7.58997,OurAirports
+GMMX,Marrakesh Menara Airport,Marrakesh,MA,MA-07,,AF,31.60481,-8.03579,OurAirports
+GMTT,Tangier Ibn Battuta Airport,Tangier,MA,MA-01,,AF,35.73174,-5.92146,OurAirports
+GOBD,Blaise Diagne International Airport,Dakar,SN,SN-DK,,AF,14.67088,-17.07283,OurAirports
+HECA,Cairo International Airport,Cairo,EG,EG-C,,AF,30.11153,31.39669,OurAirports
+HEGN,Hurghada International Airport,Hurghada,EG,EG-BA,,AF,27.17678,33.79669,OurAirports
+HKJK,Jomo Kenyatta International Airport,Nairobi,KE,KE-47,,AF,-1.31889,36.92823,OurAirports
+KATL,Hartsfield Jackson Atlanta International Airport,Atlanta,US,US-GA,,NA,33.6367,-84.4281,OurAirports
+KBOS,Boston Logan International Airport,Boston,US,US-MA,,NA,42.36197,-71.0079,OurAirports
+KDTW,Detroit Metropolitan Wayne County Airport,Detroit,US,US-MI,,NA,42.21377,-83.35379,OurAirports
+KEWR,Newark Liberty International Airport,Newark,US,US-NJ,,NA,40.6894,-74.17054,OurAirports
+KIAD,Washington Dulles International Airport,Dulles,US,US-VA,,NA,38.9445,-77.4558,OurAirports
+KJFK,John F. Kennedy International Airport,New York,US,US-NY,,NA,40.63945,-73.77932,OurAirports
+KLAX,Los Angeles International Airport,Los Angeles,US,US-CA,,NA,33.9425,-118.408,OurAirports
+KMIA,Miami International Airport,Miami,US,US-FL,,NA,25.79601,-80.28975,OurAirports
+KORD,Chicago O'Hare International Airport,Chicago,US,US-IL,,NA,41.9786,-87.9048,OurAirports
+KPHL,Philadelphia International Airport,Philadelphia,US,US-PA,,NA,39.8719,-75.2411,OurAirports
+KSEA,Seattle–Tacoma International Airport,Seattle,US,US-WA,,NA,47.44794,-122.31028,OurAirports
+KSFO,San Francisco International Airport,San Francisco,US,US-CA,,NA,37.61981,-122.37482,OurAirports
+LBSF,Sofia Airport,Sofia,BG,BG-22,,EU,42.69636,23.41767,OurAirports
+LCLK,Larnaca International Airport,Larnaca,CY,CY-04,,AS,34.8751,33.6249,OurAirports
+LDDU,Dubrovnik Ruđer Bošković Airport,Dubrovnik,HR,HR-19,,EU,42.56225,18.26554,OurAirports
+LDSP,Split Saint Jerome Airport,Split,HR,HR-17,,EU,43.5389,16.298,OurAirports
+LDZA,Zagreb Franjo Tuđman International Airport,Velika Gorica,HR,HR-01,,EU,45.7429,16.0688,OurAirports
+LEAL,Alicante-Elche Miguel Hernández Airport,Alicante,ES,ES-VC,,EU,38.2822,-0.55816,OurAirports
+LEBB,Bilbao Airport,Bilbao,ES,ES-PV,,EU,43.3011,-2.91061,OurAirports
+LEBL,Josep Tarradellas Barcelona-El Prat Airport,Barcelona,ES,ES-CT,,EU,41.2971,2.07846,OurAirports
+LEIB,Ibiza Airport,Ibiza (Eivissa),ES,ES-IB,,EU,38.8729,1.37312,OurAirports
+LEMD,Adolfo Suárez Madrid–Barajas Airport,Madrid,ES,ES-MD,,EU,40.49341,-3.57225,OurAirports
+LEMG,Málaga-Costa del Sol Airport,Málaga,ES,ES-AN,,EU,36.67823,-4.50021,OurAirports
+LEMH,Menorca Airport,Mahón (Maó),ES,ES-IB,,EU,39.8626,4.21865,OurAirports
+LEPA,Palma de Mallorca Airport,Palma de Mallorca,ES,ES-IB,,EU,39.5517,2.73881,OurAirports
+LEVC,Valencia Airport,Valencia,ES,ES-VC,,EU,39.48916,-0.48096,OurAirports
+LEZL,Seville Airport,Seville,ES,ES-AN,,EU,37.418,-5.89311,OurAirports
+LFBD,Bordeaux–Mérignac Airport,Bordeaux,FR,FR-NAQ,Nouvelle-Aquitaine,EU,44.82865,-0.71536,OurAirports
+LFBE,Bergerac Dordogne-Périgord airport,Bergerac,FR,FR-NAQ,Nouvelle-Aquitaine,EU,44.8253,0.51861,OurAirports
+LFBO,Toulouse-Blagnac Airport,Toulouse/Blagnac,FR,FR-OCC,Occitanie,EU,43.6291,1.36382,OurAirports
+LFBP,Pau Pyrénées Airport,Pau/Pyrénées (Uzein),FR,FR-NAQ,Nouvelle-Aquitaine,EU,43.38,-0.41861,OurAirports
+LFBT,Tarbes-Lourdes-Pyrénées Airport,Tarbes/Lourdes/Pyrénées,FR,FR-OCC,Occitanie,EU,43.1787,-0.00644,OurAirports
+LFBZ,Biarritz Pays Basque airport,Biarritz,FR,FR-NAQ,Nouvelle-Aquitaine,EU,43.46837,-1.52322,OurAirports
+LFKB,Bastia-Poretta International airport,Bastia,FR,FR-COR,Corse,EU,42.5527,9.48373,OurAirports
+LFKC,Calvi Sainte Catherine Airport,Calvi,FR,FR-COR,Corse,EU,42.53042,8.79298,OurAirports
+LFKF,Figari Sud-Corse Airport,Figari,FR,FR-COR,Corse,EU,41.50185,9.09709,OurAirports
+LFKJ,Ajaccio Napoléon Bonaparte airport,Ajaccio,FR,FR-COR,Corse,EU,41.9236,8.80292,OurAirports
+LFLB,Chambéry Aix les Bains airport,Chambéry,FR,FR-ARA,Auvergne-Rhône-Alpes,EU,45.6381,5.88023,OurAirports
+LFLL,Lyon Saint-Exupéry Airport,"Colombier-Saugnieu, Rhône",FR,FR-ARA,Auvergne-Rhône-Alpes,EU,45.726,5.09014,OurAirports
+LFLS,Grenoble Alpes Isère Airport,Grenoble,FR,FR-ARA,Auvergne-Rhône-Alpes,EU,45.3629,5.32937,OurAirports
+LFML,Marseille Provence Airport,"Marignane, Bouches-du-Rhône",FR,FR-PAC,Provence-Alpes-Côte d'Azur,EU,43.43809,5.2125,OurAirports
+LFMN,Nice-Côte d'Azur Airport,"Nice, Alpes-Maritimes",FR,FR-PAC,Provence-Alpes-Côte d'Azur,EU,43.6584,7.21587,OurAirports
+LFMT,Montpellier-Méditerranée Airport,Montpellier/Méditerranée,FR,FR-OCC,Occitanie,EU,43.5762,3.96301,OurAirports
+LFOB,Beauvais-Tillé airport,Beauvais,FR,FR-HDF,Hauts-de-France,EU,49.4544,2.11278,OurAirports
+LFPG,Charles de Gaulle International Airport,"Paris (Roissy-en-France, Val-d'Oise)",FR,FR-IDF,Île-de-France,EU,49.00896,2.55412,OurAirports
+LFPO,Paris-Orly Airport,"Paris (Orly, Val-de-Marne)",FR,FR-IDF,Île-de-France,EU,48.7295,2.35896,OurAirports
+LFQQ,Lille Airport,Lesquin,FR,FR-HDF,Hauts-de-France,EU,50.56656,3.10243,OurAirports
+LFRB,Brest Bretagne airport,Brest,FR,FR-BRE,Bretagne,EU,48.4479,-4.41854,OurAirports
+LFRN,Rennes-Saint-Jacques Airport,"Saint-Jacques-de-la-Lande, Ille-et-Vilaine",FR,FR-BRE,Bretagne,EU,48.0695,-1.73479,OurAirports
+LFRS,Nantes Atlantique Airport,Nantes,FR,FR-PDL,Pays de la Loire,EU,47.1532,-1.61073,OurAirports
+LFSB,EuroAirport Basel–Mulhouse–Freiburg,Bâle / Mulhouse,FR,FR-GES,Grand Est,EU,47.60068,7.52112,OurAirports
+LFST,Strasbourg Airport,Strasbourg,FR,FR-GES,Grand Est,EU,48.5383,7.62823,OurAirports
+LGAV,Athens Eleftherios Venizelos International Airport,Spata-Artemida,GR,GR-I,,EU,37.9364,23.9445,OurAirports
+LGIR,Heraklion International Nikos Kazantzakis Airport,Heraklion,GR,GR-M,,EU,35.3397,25.1803,OurAirports
+LGKR,Corfu Ioannis Kapodistrias International Airport,Kerkyra (Corfu),GR,GR-F,,EU,39.60145,19.91218,OurAirports
+LGMK,Mykonos Island National Airport,Mykonos,GR,GR-L,,EU,37.4351,25.3481,OurAirports
+LGRP,"Rhodes International Airport ""Diagoras""",Rhodes,GR,GR-L,,AS,36.4054,28.0862,OurAirports
+LHBP,Budapest Liszt Ferenc International Airport,Budapest,HU,HU-BU,,EU,47.43018,19.26239,OurAirports
+LIBD,Bari Karol Wojtyła International Airport,Bari,IT,IT-75,,EU,41.1389,16.7606,OurAirports
+LICC,Catania-Fontanarossa Airport,Catania,IT,IT-82,,EU,37.4668,15.0664,OurAirports
+LICJ,Falcone–Borsellino Airport,Palermo,IT,IT-82,,EU,38.176,13.091,OurAirports
+LIEE,Cagliari Elmas Airport,Cagliari,IT,IT-88,,EU,39.2515,9.05428,OurAirports
+LIEO,Olbia Costa Smeralda Airport,Olbia (SS),IT,IT-88,,EU,40.89895,9.51846,OurAirports
+LIMC,Milan Malpensa International Airport,Ferno (VA),IT,IT-25,,EU,45.6306,8.72811,OurAirports
+LIML,Milano Linate Airport,Segrate (MI),IT,IT-25,,EU,45.4451,9.27674,OurAirports
+LIPE,Bologna Guglielmo Marconi Airport,Bologna,IT,IT-45,,EU,44.5354,11.2887,OurAirports
+LIPZ,Venice Marco Polo Airport,Venezia (VE),IT,IT-34,,EU,45.5053,12.3519,OurAirports
+LIRF,Rome–Fiumicino Leonardo da Vinci International Airport,Rome,IT,IT-62,,EU,41.80453,12.252,OurAirports
+LIRN,Naples International Airport,Napoli,IT,IT-72,,EU,40.886,14.2908,OurAirports
+LJLJ,Ljubljana Jože Pučnik Airport,Zgornji Brnik,SI,SI-012,,EU,46.2237,14.4576,OurAirports
+LKPR,Václav Havel Airport Prague,Prague,CZ,CZ-PR,,EU,50.10087,14.25991,OurAirports
+LLBG,Ben Gurion International Airport,Tel Aviv,IL,IL-M,,AS,32.0114,34.8867,OurAirports
+LMML,Malta International Airport,Valletta,MT,MT-25,,EU,35.84593,14.49155,OurAirports
+LOWW,Vienna International Airport,Vienna,AT,AT-9,,EU,48.1103,16.5697,OurAirports
+LPFR,Faro - Gago Coutinho International Airport,Faro,PT,PT-08,,EU,37.01591,-7.97094,OurAirports
+LPPR,Francisco de Sá Carneiro Airport,Porto,PT,PT-13,,EU,41.2481,-8.68139,OurAirports
+LPPT,Lisbon Humberto Delgado Airport,Lisbon,PT,PT-11,,EU,38.7813,-9.13592,OurAirports
+LRCL,Avram Iancu Cluj International Airport,Cluj-Napoca,RO,RO-CJ,,EU,46.78604,23.68573,OurAirports
+LRIA,Iaşi International Airport,Iaşi,RO,RO-IS,,EU,47.17963,27.62143,OurAirports
+LROP,Bucharest Henri Coandă International Airport,Otopeni,RO,RO-IF,,EU,44.57179,26.10328,OurAirports
+LSGG,Geneva International Airport,Geneva,CH,CH-GE,,EU,46.2381,6.10895,OurAirports
+LSZH,Zürich Airport,Zurich,CH,CH-ZH,,EU,47.45806,8.54806,OurAirports
+LTAI,Antalya International Airport,Antalya,TR,TR-07,,AS,36.8987,30.8005,OurAirports
+LTBA,İstanbul Atatürk Airport,Istanbul(Bakırköy),TR,TR-34,,EU,40.97191,28.82371,OurAirports
+LTBJ,Adnan Menderes International Airport,Gaziemir,TR,TR-35,,AS,38.2924,27.157,OurAirports
+LTFJ,Istanbul Sabiha Gökçen International Airport,"Pendik, Istanbul",TR,TR-34,,AS,40.8986,29.3092,OurAirports
+LTFM,İstanbul Airport,Istanbul,TR,TR-34,,EU,41.27487,28.73214,OurAirports
+LUKK,Chişinău International Airport,Chişinău,MD,MD-CU,,EU,46.92774,28.9317,OurAirports
+LWSK,Skopje International Airport,Ilinden,MK,MK-008,,EU,41.95809,21.62258,OurAirports
+LYBE,Belgrade Nikola Tesla Airport,Belgrade,RS,RS-00,,EU,44.8184,20.3091,OurAirports
+MMMX,Mexico City Benito Juárez International Airport,Mexico City,MX,MX-DIF,,NA,19.43582,-99.07033,OurAirports
+MMUN,Cancún International Airport,Cancún,MX,MX-ROO,,NA,21.04082,-86.87347,OurAirports
+NTAA,Fa'a'ā International Airport,Papeete,PF,PF-U-A,Polynésie française,OC,-17.55347,-149.60694,OurAirports
+NTTB,Bora Bora Airport,Motu Mute,PF,PF-U-A,Polynésie française,OC,-16.4444,-151.75101,OurAirports
+NTTG,Rangiroa Airport,,PF,PF-U-A,Polynésie française,OC,-14.9543,-147.661,OurAirports
+NTTR,Raiatea Airport,Uturoa,PF,PF-U-A,Polynésie française,OC,-16.7229,-151.466,OurAirports
+NZAA,Auckland International Airport,Auckland,NZ,NZ-AUK,,OC,-37.01199,174.78633,OurAirports
+OERK,King Khalid International Airport,Riyadh,SA,SA-01,,AS,24.9576,46.6988,OurAirports
+OIIE,Imam Khomeini International Airport,Tehran,IR,IR-23,,AS,35.4161,51.1522,OurAirports
+OJAI,Queen Alia International Airport,Amman,JO,JO-AM,,AS,31.7226,35.9932,OurAirports
+OLBA,Beirut Rafic Hariri International Airport,Beirut,LB,LB-JL,,AS,33.81983,35.48744,OurAirports
+OMAA,Zayed International Airport,Abu Dhabi,AE,AE-AZ,,AS,24.44097,54.64924,OurAirports
+OMDB,Dubai International Airport,Dubai,AE,AE-DU,,AS,25.24979,55.37099,OurAirports
+OMDW,Al Maktoum International Airport,Dubai(Jebel Ali),AE,AE-DU,,AS,24.89617,55.16235,OurAirports
+RJBB,Kansai International Airport,Osaka,JP,JP-27,,AS,34.4273,135.244,OurAirports
+RJTT,Tokyo Haneda International Airport,Tokyo,JP,JP-13,,AS,35.54968,139.78696,OurAirports
+RKSI,Incheon International Airport,Seoul,KR,KR-28,,AS,37.4691,126.451,OurAirports
+SBGR,São Paulo/Guarulhos–Governor André Franco Montoro International Airport,São Paulo,BR,BR-SP,,SA,-23.43127,-46.46995,OurAirports
+SOCA,Cayenne – Félix Eboué Airport,Matoury,GF,GF-CY,Guyane,SA,4.81996,-52.36133,OurAirports
+TFFF,Martinique Aimé Césaire International Airport,Fort-de-France,MQ,MQ-U-A,Martinique,NA,14.591,-61.0032,OurAirports
+TFFG,Grand Case-l'Espérance Airport,Grand Case,MF,MF-U-A,Saint-Martin,NA,18.10006,-63.04744,OurAirports
+TFFJ,St. Jean Airport,Gustavia,BL,BL-U-A,Saint-Barthélemy,NA,17.9044,-62.84333,OurAirports
+TFFR,Maryse Condé International Airport,Pointe-à-Pitre,GP,GP-U-A,Guadeloupe,NA,16.26544,-61.53275,OurAirports
+TNCM,Princess Juliana International Airport,Sint Maarten,SX,SX-U-A,,NA,18.041,-63.1089,OurAirports
+UBBB,Heydar Aliyev International Airport,Baku,AZ,AZ-BA,,AS,40.47278,50.05093,OurAirports
+UDYZ,Zvartnots International Airport,Yerevan,AM,AM-ER,,AS,40.14894,44.39789,OurAirports
+UGTB,Tbilisi International Airport,Tbilisi,GE,GE-TB,,AS,41.6692,44.9547,OurAirports
+UKBB,Boryspil International Airport,Boryspil,UA,UA-32,,EU,50.345,30.8947,OurAirports
+ULLI,Pulkovo Airport,St. Petersburg,RU,RU-SPE,,EU,59.8003,30.2625,OurAirports
+UUEE,Sheremetyevo International Airport,Moscow,RU,RU-MOS,,EU,55.97749,37.38668,OurAirports
+VABB,Chhatrapati Shivaji Maharaj International Airport,Mumbai,IN,IN-MM,,AS,19.0887,72.8679,OurAirports
+VHHH,Hong Kong International Airport,Hong Kong,HK,HK-NT,,AS,22.31184,113.91486,OurAirports
+VIDP,Indira Gandhi International Airport,New Delhi,IN,IN-DL,,AS,28.55563,77.09519,OurAirports
+VTBS,Suvarnabhumi Airport,Bangkok,TH,TH-10,,AS,13.6811,100.747,OurAirports
+VVTS,Tan Son Nhat International Airport,Ho Chi Minh City,VN,VN-SE,,AS,10.8188,106.652,OurAirports
+WSSS,Singapore Changi Airport,Singapore,SG,SG-04,,AS,1.35019,103.994,OurAirports
+ZBAA,Beijing Capital International Airport,Beijing,CN,CN-11,,AS,40.07735,116.5967,OurAirports
+ZGGG,Guangzhou Baiyun International Airport,Guangzhou (Huadu),CN,CN-44,,AS,23.3924,113.299,OurAirports
+ZSPD,Shanghai Pudong International Airport,Shanghai (Pudong),CN,CN-31,,AS,31.1434,121.805,OurAirports
+ZUUU,Chengdu Shuangliu International Airport,Chengdu (Shuangliu),CN,CN-51,,AS,30.55826,103.94597,OurAirports
