@@ -5,6 +5,9 @@ Course: EFREI Paris - Data Analysis & Visualization - ST2DVZ-2627PSA01
 Author: **Thomas Bottalico** [Mail](mailto:thomas.bottalico@efrei.net) | [LinkedIn](https://www.linkedin.com/in/thomas-bottalico/) | [GitHub](https://github.com/ThomasB395)  
 Supervisor: **Mano Joseph Mathew** [Mail](mailto:mano.mathew@efrei.fr) | [LinkedIn](https://www.linkedin.com/in/manomathew/)
 
+Online app: [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)  
+Source code: [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
+
 
 ## 1. Problem statement
 1. What was the impact of Covid-19 on French air traffic, and has the sector recovered?
@@ -69,11 +72,8 @@ MacOS (Homebrew), skip if `brew --version` already works :
   eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-  Intel Mac:
-```bash
-  
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+  Intel Mac: installation not supported (some translation dependencies are not available for Python 3.14 on Intel Mac). Use the online version: [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)
+
 Install Python 3.14:
 
 ```bash
