@@ -79,7 +79,7 @@ macOS (Homebrew), à sauter si `brew --version` fonctionne déjà :
   eval "$(/usr/local/bin/brew shellenv)"
 ```
 
-- Installer Python 3.14 :
+Installer Python 3.14 :
 
 ```bash
 
