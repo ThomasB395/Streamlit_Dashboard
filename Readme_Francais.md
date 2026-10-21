@@ -51,12 +51,40 @@ Code : 'utils/load.py', 'utils/preps.py', 'utils/airport_info.py'
 - La partie 2 utilise la dernière année sélectionnée.
 - Les commentaires sont rédigés à partir des filtres par défaut (2018 à 2025, tous les types de liaisons).
 
-Prérequis : Python version 3.14.
+## 5. Installation et lancement
+```bash
+
+python3.14 --version
+```
+### 1. macOS
+
+macOS (Homebrew), à sauter si `brew --version` fonctionne déjà :
+
+  Mac Apple Silicon (M1/M2/M3...) :
+```bash
+  
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+  Mac Intel :
+```bash
+  
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+- Installer Python 3.14 :
 
 ```bash
 
-python -m venv .venv
-source .venv/bin/activate       
+brew install python@3.14
+```
+
+Lancer l'application :
+```bash
+
+python3.14 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -64,6 +92,39 @@ streamlit run app.py
 Pour regénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
 
 ```bash
+
+python -m utils.airport_info
+```
+
+### 2. Windows
+
+Windows (winget, déjà inclus dans Windows 10/11), à sauter si `py -3.14 --version` fonctionne déjà :
+
+- Installer Python 3.14 :
+
+```powershell
+
+winget install Python.Python.3.14
+```
+
+Lancer l'application (PowerShell) :
+```powershell
+
+py -3.14 -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Si PowerShell bloque le script d'activation, exécuter une seule fois la commande suivante, puis réactiver :
+```powershell
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Pour regénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
+
+```powershell
 
 python -m utils.airport_info
 ```

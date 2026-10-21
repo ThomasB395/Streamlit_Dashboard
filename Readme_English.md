@@ -53,11 +53,38 @@ Code: `utils/load.py`, `utils/preps.py`, `utils/airport_info.py`
 
 
 ## 5. Installation and launch
-Requirements: Python version 3.14.
+```bash
+
+python3.14 --version
+```
+### 1. MacOS
+
+MacOS (Homebrew), skip if `brew --version` already works :
+
+  Apple Silicon Mac (M1/M2/M3...):
+```bash
+  
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+  Intel Mac:
+```bash
+  
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Install Python 3.14:
 
 ```bash
 
-python -m venv .venv
+brew install python@3.14
+```
+
+Run the app :
+```bash
+
+python3.14 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
@@ -66,6 +93,39 @@ streamlit run app.py
 To regenerate the airport reference table from OurAirports (optional, the file is already provided):
 
 ```bash
+
+python -m utils.airport_info
+```
+
+### 2. Windows
+
+Windows (winget, already included in Windows 10/11), skip if `py -3.14 --version` already works:
+
+Install Python 3.14:
+
+```powershell
+
+winget install Python.Python.3.14
+```
+
+Run the app (PowerShell):
+```powershell
+
+py -3.14 -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+If PowerShell blocks the activation script, run this once, then activate again:
+```powershell
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+To regenerate the airport reference table from OurAirports (optional, the file is already provided):
+
+```powershell
 
 python -m utils.airport_info
 ```
