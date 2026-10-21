@@ -71,7 +71,13 @@ macOS (Homebrew), à sauter si `brew --version` fonctionne déjà :
   eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-  Mac Intel : installation non prise en charge (certaines dépendances de la traduction n'existent pas pour Python 3.14 sur Mac Intel). Utiliser la version en ligne : [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)
+  Mac Intel :
+```bash
+
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/usr/local/bin/brew shellenv)"
+```
 
 - Installer Python 3.14 :
 
@@ -129,7 +135,7 @@ Pour regénérer le référentiel des aéroports à partir d'OurAirports (facult
 python -m utils.airport_info
 ```
 
-**Traduction anglaise :** elle passe par Argos Translate. Les traductions déjà faites sont enregistrées dans `utils/translations.json`. Si un texte n'y est pas encore, le modèle français → anglais (environ 100 Mo) est téléchargé une seule fois.
+**Traduction anglaise :** les traductions sont pré-calculées et enregistrées dans `utils/translations.json` (texte français → texte anglais). L'application lit seulement ce fichier : aucun modèle de traduction ni téléchargement, et le résultat est identique sur tous les ordinateurs. Un texte absent du fichier (par exemple un texte dynamique contenant des chiffres) reste affiché tel quel. Pour ajouter un nouveau texte, il suffit d'ajouter sa traduction dans le fichier.
 
 ## 6. Structure du projet
 
@@ -147,13 +153,13 @@ Streamlit_Dashboard/
 │   ├── viz.py             # Fonctions graphiques Plotly avec un style commun
 │   ├── airport_info.py    # Construction du référentiel aéroports (OurAirports)
 │   ├── i18n.py            # Traduction FR → EN
-│   └── translations.json  # Cache des traductions
+│   └── translations.json  # Traductions FR → EN pré-calculées
 ├── data/                  # Données DGAC, référentiel aéroports, Info_Data.pdf
 ├── assets/                # Logo EFREI
 └── requirements.txt       # Dépendances avec versions fixées
 ```
 
-**Performance :** les données nettoyées et les listes des filtres sont mises en cache avec `st.cache_data`. La traduction utilise `st.cache_resource` et un cache sur disque.
+**Performance :** les données nettoyées et les listes des filtres sont mises en cache avec `st.cache_data`. Le fichier des traductions est chargé une seule fois avec `st.cache_data`.
 
 ## 7. Limites et éthique
 

@@ -72,7 +72,13 @@ MacOS (Homebrew), skip if `brew --version` already works :
   eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-  Intel Mac: installation not supported (some translation dependencies are not available for Python 3.14 on Intel Mac). Use the online version: [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)
+  Intel Mac:
+```bash
+
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/usr/local/bin/brew shellenv)"
+```
 
 Install Python 3.14:
 
@@ -130,7 +136,7 @@ To regenerate the airport reference table from OurAirports (optional, the file i
 python -m utils.airport_info
 ```
 
-**English translation:** it relies on Argos Translate. Translations already done are saved in `utils/translations.json`. If a text is not there yet, the French → English model (about 100 MB) is downloaded once.
+**English translation:** translations are pre-computed and stored in `utils/translations.json` (French text → English text). The app only reads this file: no translation model, no download, and the result is the same on every computer. A text missing from the file (for example a dynamic text containing numbers) is displayed as it is. To add a new text, just add its translation to the file.
 
 
 ## 6. Project structure
@@ -149,13 +155,13 @@ Streamlit_Dashboard/
 │   ├── viz.py             # Plotly chart functions with a shared style
 │   ├── airport_info.py    # Airport reference table builder (OurAirports)
 │   ├── i18n.py            # FR → EN translation
-│   └── translations.json  # Translation cache
+│   └── translations.json  # Pre-computed FR → EN translations
 ├── data/                  # DGAC data, airport reference table, Info_Data.pdf
 ├── assets/                # EFREI logo 
 └── requirements.txt       # Pinned dependencies
 ```
 
-**Performance:** the cleaned data and the filter lists are cached with `st.cache_data`. The translation uses `st.cache_resource` and an on-disk cache.
+**Performance:** the cleaned data and the filter lists are cached with `st.cache_data`. The translation file is loaded once with `st.cache_data`.
 
 
 ## 7. Limitations and ethics
