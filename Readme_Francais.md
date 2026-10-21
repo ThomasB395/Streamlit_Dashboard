@@ -6,7 +6,7 @@ Auteur : **Bottalico Thomas** [Mail](mailto:thomas.bottalico@efrei.net) | [Linke
 Référent : **M Mano Mathew Joseph** [Mail](mailto:mano.mathew@efrei.fr) | [LinkedIn](https://www.linkedin.com/in/manomathew/)
 
 Application en ligne : [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)  
-Code source : [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
+Répértoire Github : [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
 
 
 ## 1. Problématique

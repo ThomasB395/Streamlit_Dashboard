@@ -6,7 +6,7 @@ Author: **Thomas Bottalico** [Mail](mailto:thomas.bottalico@efrei.net) | [Linked
 Supervisor: **Mano Joseph Mathew** [Mail](mailto:mano.mathew@efrei.fr) | [LinkedIn](https://www.linkedin.com/in/manomathew/)
 
 Online app: [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)  
-Source code: [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
+Github Respertory : [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
 
 
 ## 1. Problem statement
