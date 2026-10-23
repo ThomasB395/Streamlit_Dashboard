@@ -3,7 +3,7 @@ from utils.i18n import tr
 import utils.viz as viz
 
 
-def render (df, tables) :
+def render (df, tables) :   # We display the visualisation, the text of this analysis and the conclusion of the 2nd part
 
     st.header(tr("Partie 2 : Le réseau français"))
     st.markdown(tr("""Dans cette section, nous allons essayer de voir d'où partent la plupart des vols, où ils vont et quelle est leur popularité. 

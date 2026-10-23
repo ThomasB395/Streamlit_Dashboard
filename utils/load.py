@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd, glob
 
 
-def load_data() :
+def load_data() :   # The purpose is to load all the data from the csv files in a unique dataframe.
     data_dir = Path(__file__).resolve().parents[1] / 'data'
     files = sorted(glob.glob(str(data_dir/"ASP_PAP_*.csv")))
     frames = []

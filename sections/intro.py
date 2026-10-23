@@ -5,7 +5,7 @@ from utils.preps import number_format
 
 
 
-def render (df, tables) :
+def render (df, tables) :  # Display the text and the metric for teh introduction section.
     st.header(tr("Introduction : "))
 
     st.markdown(tr("""

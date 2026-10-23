@@ -24,7 +24,7 @@ def get_data():
 
 
 @st.cache_data(show_spinner=False)
-def get_options():
+def get_options():   # The purpose of this function is to have a unique list of all the territories and airports for the filter bar.
     d = get_data()
     territories = pd.concat([d["departure_territory"], d["destination_territory"]]).dropna().unique()   # We create a unique list of all the territories.
     airports = pd.concat([                                               # We use concat for an unique columns for the 2 lines result of the mask.
@@ -36,7 +36,7 @@ def get_options():
 
 
 
-def apply_filters(df, years, contienent, territories, airports) :
+def apply_filters(df, years, contienent, territories, airports) :   # We keep only the lines that match with the filter.
     # Year in paramete is a tuple with the min and max year of the filter.
     # .between(*years) take the year in th df between the 2 part of the year filter.
     # For Domestic/International, we chek if the value of the line is in the contiennt list of the filter.

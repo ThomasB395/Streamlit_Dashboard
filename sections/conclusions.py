@@ -29,15 +29,13 @@ DEFINITIONS = pd.DataFrame([
 ], columns=["Variable", "Colonne source", "Unité", "Définition"])
 
 
-def _tr_table(d, cols=()):
-    # Translate the column names and the text cells of the given columns.
+def _tr_table(d, cols=()):  # Translate the column names and the text cells of the given columns.
     d = d.copy()
     for c in cols:
         d[c] = d[c].map(tr)
     return d.rename(columns=tr)
 
-
-def render(df, tables):
+def render(df, tables) :  # Display the text and the quality metrics of the analysis.
     q = tables["quality"].set_index("Check")["Result"]
     removed = df.attrs.get("removed_same_airport", 0)
 

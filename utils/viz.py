@@ -14,11 +14,11 @@ SEQ = ["#e6f0fc", "#b7d3f6", "#6da7ec", "#2a78d6", "#1c5cab", "#0d366b"]
 important_element, secondary_element, title1, title2, grid = "#2a78d6", "#c9c7bf", "#0b0b0b", "#52514e", "#ebeae6"
 
 
-def style(fig, title, xtitle=None, ytitle=None) :
+def style(fig, title, xtitle=None, ytitle=None) :    # The purpose of this function is to have a common style for all the visualisation without rewrite the code for each visualisation.
     title, xtitle, ytitle = tr(title), tr(xtitle), tr(ytitle)   # Translation if the user selected English.
     for t in fig.data :
         if getattr(t, "name", None) : t.name = tr(t.name)
-    for a in fig.layout.annotations : a.text = tr(a.text)  # The purpose of this function is to have a common style for all the visualisation without rewrite the code for each visualisation.
+    for a in fig.layout.annotations : a.text = tr(a.text)
     fig.update_layout(
         template="plotly_white",
         separators = ", ",  # For mathématical expression. The delimitor between the number an dthe decimal is a coma
@@ -37,7 +37,7 @@ def style(fig, title, xtitle=None, ytitle=None) :
 ########################################################################################################################
 # PART 1 : Covid & reprise
 
-def line_trafic_mensuel (df) :
+def line_trafic_mensuel (df) : # We display the evolution of the air traffic
     m = df.groupby("flight_period", as_index=False)["direct_passengers_onboard"].sum()
     # as_index+False permit to have a dataframe and not a series. It's like a reset_index
     m["direct_passengers_onboard_in_million"] = m["direct_passengers_onboard"] / 1e6
@@ -73,7 +73,7 @@ def line_trafic_mensuel (df) :
 
 
 
-def heatmap_saisonalite (df) :
+def heatmap_saisonalite (df) : # We display the traffic evolution in a heatmap.
     table = df.pivot_table(index="year", columns="month", values="direct_passengers_onboard", aggfunc="sum") / 1e6
     # Transform the df in a table with the sum of the passengers on board for each month and each year.
     table.columns = [tr(m) for m in month]   # replace the number of month by the name of the month
@@ -86,7 +86,7 @@ def heatmap_saisonalite (df) :
 
 
 
-def monthly_traffic(df, ref_year=2018):
+def monthly_traffic(df, ref_year=2018): # We display the traffic evolution in a monthly graph.
     m = df.groupby(["Domestic/International", "flight_period"], as_index=False)["direct_passengers_onboard"].sum()
     m["M"] = m["direct_passengers_onboard"] / 1e6
     #A dataframe with the number of passenger for each month each year and each type of flight (Domestic, UE, ETC)
@@ -107,7 +107,7 @@ def monthly_traffic(df, ref_year=2018):
 
 
 
-def traffic_recovery_index (df) :
+def traffic_recovery_index (df) : # We display the traffic recovery index.
     m = df.groupby(["Domestic/International", "year", "month"], as_index=False)["direct_passengers_onboard"].sum()
     #A dataframe with the number of passenger for each month each year and each type of flight (Domestic, UE, ETC)
 
@@ -136,7 +136,7 @@ def traffic_recovery_index (df) :
 
 
 
-def evolution_of_the_laison(df) :
+def evolution_of_the_laison(df) : # We display the evolution of the passengers on board in the different routes.
     g = df[df["year"].isin([2018, 2025])].assign(route=route_label)
     p = g.pivot_table(index=["route", "Domestic/International"], columns="year", values="direct_passengers_onboard", aggfunc="sum").dropna().reset_index()
     p["delta"] = (p[2025] - p[2018]) / 1e3
@@ -163,7 +163,7 @@ def evolution_of_the_laison(df) :
 ########################################################################################################################
 # Part 2 : A quoi ressemble lé résaux ?
 
-def map_airports(df, year = 2025) :
+def map_airports(df, year = 2025) : # We display all the airports in a map with a different size in function of the number of passengers in the airport
     d = df[df["year"] == year] # For this part, we keep only the data from 2025 (the latest part of the dataset)
     columns = ["airport", "airport_code", "country", "continent", "territory", "lat", "lon"]
     ends = []
@@ -205,7 +205,7 @@ def map_airports(df, year = 2025) :
 
 
 
-def bar_top_routes(df, year = 2025) :
+def bar_top_routes(df, year = 2025) :  # We display the top 30 routes in a bar chart.
     d = df[df["year"] == year].assign(route = route_label)
     t = d.groupby(["route", "Domestic/International"], as_index=False).agg(
         direct_passengers_onboard=("direct_passengers_onboard", "sum"), distance_km=("distance_km", "first"))
@@ -227,7 +227,7 @@ def bar_top_routes(df, year = 2025) :
     return style(fig,tr("Quel trajet a le plus grand nombre de passagers ?"))
 
 
-def concentration_curve(df, year = 2025):
+def concentration_curve(df, year = 2025):  # We display the concentration curve of the traffic.
     r = df[df["year"] == year].assign(route=route_label).groupby("route")["direct_passengers_onboard"].sum().sort_values(ascending=False)
 
     c = pd.DataFrame({"route": r.index, "route_rank": range(1, len(r) + 1)})
@@ -255,7 +255,7 @@ def concentration_curve(df, year = 2025):
     return style(fig, tr(f"Courbe de Concentration "), tr("Pourcentage de vol"), tr("Pourcentage du traffic"))
 
 
-def box_passengers_by_distance(df, year=2025):
+def box_passengers_by_distance(df, year=2025) :  # We display the boxplot of the passengers by distance.
     d = df[(df["year"] == year) & df["Mean passengers by flight"].notna()].assign(route=route_label)
     d["distance_class"] = pd.cut(d["distance_km"], [0, 1500, 4000, float("inf")],
                                  labels=["Short-haul flight (< 1 500 km)", "Medium-haul flight (1 500 - 4 000 km)", "Long-haul flight (> 4 000 km)"])

@@ -21,7 +21,7 @@ metropole_domtom = {"France métropolitaine", "La Réunion", "Guadeloupe", "Mart
 continent = {"FR": "France métropolitaine", "RE": "La Réunion", "GP": "Guadeloupe", "MQ": "Martinique", "GF": "Guyane", "YT": "Mayotte", "PF": "Polynésie française", "NC": "Nouvelle-Calédonie","BL": "Saint-Barthélemy", "MF": "Saint-Martin", "PM": "Saint-Pierre-et-Miquelon", "WF": "Wallis-et-Futuna"}
 
 
-def add_features(data: pd.DataFrame, airport_ref: pd.DataFrame) -> pd.DataFrame:
+def add_features(data, airport_ref) :  # The purpose is to add nex feature in the two dataset
     df = data.copy()
     ref = airport_ref.set_index("apt")
     for side in ["departure", "destination"]:
@@ -38,7 +38,7 @@ def add_features(data: pd.DataFrame, airport_ref: pd.DataFrame) -> pd.DataFrame:
 
 
 
-def cleaning (data) :
+def cleaning (data) :   # The purpose is to clean the data for the vizualisation.
     df = data.copy()
 
     # We rename the columns to make it easier to understand.
@@ -67,12 +67,12 @@ def cleaning (data) :
 
 
 
-def route_label (df) :
+def route_label (df) : # The purpose is to give the airport pair route
     return df["departure_airport"] + " -> " + df["destination_airport"]
 
 
 
-def number_format(x) :
+def number_format(x) :  # We format the number format for read more easily.
     if pd.isna(x) : return 'NA'
     for div, unit in [(1e9, "B"), (1e6, "M"), (1e3, "k")]:
         if abs(x) >= div : return f"{x/div:,.0f}{unit}"
@@ -82,7 +82,7 @@ def number_format(x) :
 
 
 
-def make_tables(df_f) :
+def make_tables(df_f) : # return a dictionary with a quality table of the data
     # The parameter are the filtrated dataframe, the metric name and the column of the metric.
     years = sorted(df_f["year"].unique()) # A list with the filter years.
 

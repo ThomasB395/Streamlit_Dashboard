@@ -3,7 +3,7 @@ from utils.i18n import tr
 import utils.viz as viz
 
 
-def render (df, tables) :
+def render (df, tables) :  # We display the visualisation, the text of this analysis and the conclusion of the 1er part
 
     st.header(tr("Partie 1 : Covid et Aviation"))
     st.markdown(tr("""En 2018, les aéroports français ont accueilli 81,2 millions de passagers, soit une moyenne de 6,76 millions par mois. Ce chiffre servira de référence pour analyser les variations pendant et après la période du Covid et tenter de voir si cette crise a eu un impact sur notre façon de voyager en avion.
