@@ -1,5 +1,3 @@
-# Load of the data
-
 from pathlib import Path
 import pandas as pd, glob
 

@@ -59,9 +59,9 @@ def line_trafic_mensuel (df) : # We display the evolution of the air traffic
                              mode="lines", line=dict(color=important_element, width=2.5),name="Passengers",
                              hovertemplate="<b>%{x|%b %Y}</b><br>%{y:.2f} Million of passengers<extra></extra>")) # Personalisation of the box with the number of passengers.
 
-    events = {"2020-04": tr("1er Confinement"),"2020-10": tr("2éme Confinement"),"2021-04": tr("3éme Confinement"),
-              "2021-07": tr("Passe Sanitaire, réouverture partielle"),"2022-02": tr("Fin des controles au frontiére"),"2022-03": tr("Fin du passe vaccinal"), "2022-08": tr("Fin de toues les mesures liées au COVID-19"),
-              "2022-12":tr("Gréve des contrôleurs aérien"),"2023-09": tr("Fin de la gréve des contrôleurs aérien"),"2024-01": tr("Annulation de vol due a l'installation de 4-Flight system"), "2024-08": tr("JO de Paris")}
+    events = {"2020-04": tr("1er Confinement"),"2020-10": tr("2e Confinement"),"2021-04": tr("3e Confinement"),
+              "2021-07": tr("Passe Sanitaire, réouverture partielle"),"2022-02": tr("Fin des contrôles aux frontières"),"2022-03": tr("Fin du passe vaccinal"), "2022-08": tr("Fin de toutes les mesures liées au COVID-19"),
+              "2022-12":tr("Grève des contrôleurs aériens"),"2023-09": tr("Fin de la grève des contrôleurs aériens"),"2024-01": tr("Annulations de vols dues à l'installation du système 4-Flight"), "2024-08": tr("JO de Paris")}
 
     for key, value in events.items() :
         y = m.loc[m["flight_period"] == key, "direct_passengers_onboard_in_million"]  # Add the number of passegeners on board to the hovertemplate box.
@@ -69,7 +69,7 @@ def line_trafic_mensuel (df) : # We display the evolution of the air traffic
         fig.add_annotation(x=key, y=y.iloc[0], text=value, showarrow=True, arrowhead=0, arrowcolor=title2, ax=40, ay=-50, font=dict(size=11, color=title2), align="left", bgcolor="rgba(255,255,255,.8)")
         # Add the different events to the graph
 
-    return style(fig, tr("Evolution du traffic aérien"), tr("Année"), tr("Millions de passagers"))
+    return style(fig, tr("Évolution du trafic aérien"), tr("Année"), tr("Millions de passagers"))
 
 
 
@@ -82,7 +82,7 @@ def heatmap_saisonalite (df) : # We display the traffic evolution in a heatmap.
     )
     fig.update_yaxes(type="category")  # We display one line by year
 
-    return style(fig, tr("Heatmap du traffic saisonier"), tr("Mois"), tr("Année"))
+    return style(fig, tr("Heatmap du trafic saisonnier"), tr("Mois"), tr("Année"))
 
 
 
@@ -102,7 +102,7 @@ def monthly_traffic(df, ref_year=2018): # We display the traffic evolution in a 
 
 
     fig.update_xaxes(hoverformat="%b %Y")     # date shown at the top of the hover box
-    return style(fig, tr("Traffic mensuel pour les différents types de vol"),
+    return style(fig, tr("Trafic mensuel pour les différents types de vol"),
                  tr("Année"), tr("Millions de passagers"))
 
 
@@ -132,7 +132,7 @@ def traffic_recovery_index (df) : # We display the traffic recovery index.
                                  hovertemplate=f"<b>{i}</b> - %{{x|%b %Y}}<br>Index: %{{y:.0f}} (100 = 2018)"
                                  "<br>%{customdata[0]:,.0f} passengers on board"))
 
-    return style(fig, "Index sur retour du traffic pour chaque type de vol", tr("Année"), tr("Indice de Traffic"))
+    return style(fig, "Indice de retour du trafic pour chaque type de vol", tr("Année"), tr("Indice de trafic"))
 
 
 
@@ -156,7 +156,7 @@ def evolution_of_the_laison(df) : # We display the evolution of the passengers o
         fig.update_yaxes(categoryorder="array", categoryarray=list(sel["route"]))
         fig.update_layout(barmode="relative", bargap=0.25, height=200 + 25 * len(sel))
 
-    return style(fig,tr("Evolution des liasons aérienne"),tr("Changement dans le nombre de passager annuel"), tr("Liason"))
+    return style(fig,tr("Évolution des liaisons aériennes"),tr("Changement dans le nombre de passagers annuel"), tr("Liaison"))
 
 
 
@@ -199,7 +199,7 @@ def map_airports(df, year = 2025) : # We display all the airports in a map with 
                     showocean=True, oceancolor="#fcfcfb", coastlinecolor=grid, showframe=False,
                     lataxis_range=[-35, 65], lonaxis_range=[-90, 125], domain=dict(x=[0, 1], y=[0, 1]))
 
-    fig = style(fig, tr("Carte des aéroports les plus important"))
+    fig = style(fig, tr("Carte des aéroports les plus importants"))
     fig.update_layout(height=850, margin=dict(l=0, r=0, t=90, b=0), legend=dict(itemsizing="constant"))
     return fig
 
@@ -252,7 +252,7 @@ def concentration_curve(df, year = 2025):  # We display the concentration curve 
     fig.update_xaxes(range=[0, 100], ticksuffix=" %")
     fig.update_yaxes(range=[0, 101], ticksuffix=" %")
     fig.update_layout(showlegend=False)
-    return style(fig, tr(f"Courbe de Concentration "), tr("Pourcentage de vol"), tr("Pourcentage du traffic"))
+    return style(fig, tr(f"Courbe de concentration"), tr("Pourcentage de vols"), tr("Pourcentage du trafic"))
 
 
 def box_passengers_by_distance(df, year=2025) :  # We display the boxplot of the passengers by distance.
@@ -269,5 +269,5 @@ def box_passengers_by_distance(df, year=2025) :  # We display the boxplot of the
 
     fig.update_yaxes(rangemode="tozero")
     fig.update_layout(showlegend=False)
-    return style(fig, tr(f"Nombre de passager en fonction de la distance de vol"), tr("Distance du vol"), tr("Nombre de passager par vol"))
+    return style(fig, tr(f"Nombre de passagers en fonction de la distance de vol"), tr("Distance du vol"), tr("Nombre de passagers par vol"))
 

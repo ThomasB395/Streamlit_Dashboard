@@ -63,7 +63,7 @@ def render(df, tables) :  # Display the text and the quality metrics of the anal
         "Part (%)": (miss.values / len(df) * 100).round(2),
     }).sort_values("Valeurs manquantes", ascending=False)
     st.dataframe(_tr_table(missing), hide_index=True, width="stretch", height=250)
-    st.caption(tr("destination_territory posséde de nombreuse valeurs manquantes mais cela n'a aucun impact. La colonne n'est pas utulisé pour les visualisations."))
+    st.caption(tr("destination_territory possède de nombreuses valeurs manquantes, mais cela n'a aucun impact. La colonne n'est pas utilisée pour les visualisations."))
     st.caption(tr("Les valeurs NaN dans destination_continent et departure_continent concernent tous les aéroports américains. Cela n'a aucun impact non plus sur les visualisations puisqu'un aéroport aux États-Unis n'est pas en Europe et est donc toujours classé « Hors UE »."))
 
     # Validation checks
@@ -101,4 +101,4 @@ def render(df, tables) :  # Display the text and the quality metrics of the anal
 
     **Implications**
     - La dépendance à quelques liaisons et à Paris rend le secteur vulnérable à un nouveau choc (sanitaire, guerre, fermeture de l'espace aérien).
-    - Les baisses observé sur la reprise ne peuvent pas s'expliquer uniquement par la crise du covid. Kes données ne donnent aucune cause, il s'agit ici d'interprétation. """))
+    - Les baisses observées sur la reprise ne peuvent pas s'expliquer uniquement par la crise du covid. Les données ne donnent aucune cause, il s'agit ici d'interprétation. """))

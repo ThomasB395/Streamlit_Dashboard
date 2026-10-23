@@ -10,7 +10,7 @@ from sections import intro, Story1, Story2, conclusions
 st.set_page_config(page_title="Tableau de bord de data storytelling", layout="wide")
 
 
-st.title(tr("Etude du traffic aérien francais entre 2018 et 2025"))
+st.title(tr("Étude du trafic aérien français entre 2018 et 2025"))
 st.caption("""Source : ASP_APT_1990_2025.zip  
            https://www.data.gouv.fr/datasets/trafic-aerien-commercial-mensuel-francais-par-paire-daeroports-par-sens-depuis-1990  
            Licence Libre""")

@@ -12,7 +12,7 @@ def render (df, tables) :  # Display the text and the metric for teh introductio
     En 2020, la pandémie de COVID-19 a frappé le monde entier. Avec les différents confinements, le secteur de l'aviation a été profondément touché par cette crise.  
     À partir des données rendues publiques par le gouvernement, nous tenterons d'évaluer l'impact du COVID-19 sur le secteur de l'aviation commerciale française et la manière dont celui-ci s'est redressé.  
     Nous examinerons ensuite la structure du réseau français.  
-    Il est important de noter que les analyses suivantes sont réalisé avec les valeurs des filtres par défault. Pour les visualisations qui ne contienne qu'une année, c'est la derniére année séléctioné qui est pris en compte.  
+    Il est important de noter que les analyses suivantes sont réalisées avec les valeurs des filtres par défaut. Pour les visualisations qui ne contiennent qu'une année, c'est la dernière année sélectionnée qui est prise en compte.  
     """))
 
     airports = pd.concat([df["departure_airport_code"], df["destination_airport_code"]]).nunique()

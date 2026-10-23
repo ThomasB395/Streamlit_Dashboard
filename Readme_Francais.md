@@ -1,4 +1,4 @@
-# Etude du traffic aérien français entre 2018 et 2025. 
+# Étude du trafic aérien français entre 2018 et 2025. 
 
 Projet : Streamlit Dashboard - Data Storytelling  
 Cours : EFREI Paris -  Data Analysis & Visualization - ST2DVZ-2627PSA01  
@@ -6,13 +6,13 @@ Auteur : **Bottalico Thomas** [Mail](mailto:thomas.bottalico@efrei.net) | [Linke
 Référent : **M Mano Mathew Joseph** [Mail](mailto:mano.mathew@efrei.fr) | [LinkedIn](https://www.linkedin.com/in/manomathew/)
 
 Application en ligne : [https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/](https://thomasb395-streamlit-dashboard-app-ywvvau.streamlit.app/)  
-Répértoire Github : [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
+Répertoire GitHub : [https://github.com/ThomasB395/Streamlit_Dashboard](https://github.com/ThomasB395/Streamlit_Dashboard)
 
 
 ## 1. Problématique
-1. Quel a été l'impact du Covid-19 sur le traffic aérien francais et le secteur s'est il redressé ? 
-2. La reprise est elle la même pour tous les types de liasons (Métropole, Outre-mer, Europe, Hors Europe) ?
-3. A quoi ressemble le réseau français aujourd'hui ? Quelles sont les aéroports clé ? Quelle liaisons le portent et a quel points est il concentrè ?
+1. Quel a été l'impact du Covid-19 sur le trafic aérien français et le secteur s'est-il redressé ? 
+2. La reprise est-elle la même pour tous les types de liaisons (Métropole, Outre-mer, Europe, Hors Europe) ?
+3. À quoi ressemble le réseau français aujourd'hui ? Quels sont les aéroports clés ? Quelles liaisons le portent et à quel point est-il concentré ?
 
 
 ## 2. Données 
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Pour regénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
+Pour régénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
 
 ```bash
 
@@ -128,14 +128,22 @@ Si PowerShell bloque le script d'activation, exécuter une seule fois la command
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
-Pour regénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
+Pour régénérer le référentiel des aéroports à partir d'OurAirports (facultatif, le fichier est déjà fourni) :
 
 ```powershell
 
 python -m utils.airport_info
 ```
 
-**Traduction anglaise :** les traductions sont pré-calculées et enregistrées dans `utils/translations.json` (texte français → texte anglais). L'application lit seulement ce fichier : aucun modèle de traduction ni téléchargement, et le résultat est identique sur tous les ordinateurs. Un texte absent du fichier (par exemple un texte dynamique contenant des chiffres) reste affiché tel quel. Pour ajouter un nouveau texte, il suffit d'ajouter sa traduction dans le fichier.
+### 3. Traduction anglaise (FR → EN)
+
+Le dashboard est rédigé en français. La version anglaise s'affiche via le sélecteur de langue de la barre latérale.
+
+Les traductions sont pré-calculées et enregistrées dans `utils/translations.json` (texte français → texte anglais). Le module `utils/i18n.py` lit seulement ce fichier : aucun modèle de traduction, aucun téléchargement, et le résultat est identique sur tous les ordinateurs. Un texte absent du fichier (par exemple un texte dynamique contenant des chiffres) reste affiché tel quel. Pour ajouter un nouveau texte, il suffit d'ajouter sa traduction dans le fichier.
+
+**Pourquoi ce choix :** une première version traduisait les textes à l'exécution avec une bibliothèque de traduction automatique (`argostranslate`). Ses dépendances n'ont pas les mêmes versions disponibles sur Mac Apple Silicon et sur Mac Intel, dont les mises à jour sont de moins en moins prises en charge. L'installation pouvait donc échouer ou donner des résultats différents selon la machine. Un fichier JSON statique supprime cette dépendance et garantit que l'application s'installe et fonctionne de la même façon sur tous les systèmes.
+
+> Le fichier `utils/translations.json` a été généré par IA à partir des textes français, puis intégré au projet.
 
 ## 6. Structure du projet
 
