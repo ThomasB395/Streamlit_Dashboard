@@ -34,7 +34,7 @@ def style(fig, title, xtitle=None, ytitle=None) :    # The purpose of this funct
 
 
 
-########################################################################################################################
+#-----------------------------------------------------------------------------------------------------------------------
 # PART 1 : Covid & reprise
 
 def line_trafic_mensuel (df) : # We display the evolution of the air traffic
@@ -160,7 +160,7 @@ def evolution_of_the_laison(df) : # We display the evolution of the passengers o
 
 
 
-########################################################################################################################
+#-----------------------------------------------------------------------------------------------------------------------
 # Part 2 : A quoi ressemble lé résaux ?
 
 def map_airports(df, year = 2025) : # We display all the airports in a map with a different size in function of the number of passengers in the airport

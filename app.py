@@ -6,7 +6,7 @@ from utils.i18n import tr
 from sections import intro, Story1, Story2, conclusions
 
 
-#----------------
+#-----------------------------------------------------------------------------------------------------------------------
 st.set_page_config(page_title="Tableau de bord de data storytelling", layout="wide")
 
 
@@ -17,6 +17,9 @@ st.caption("""Source : ASP_APT_1990_2025.zip
 
 contienent = ["Métropole", "Outre-mer", "Europe", "Hors Europe"]
 
+
+
+#-----------------------------------------------------------------------------------------------------------------------
 @st.cache_data(show_spinner=False) # We keep the result of the function in memory, so that it is not recomputed every time the function is called. It's mandatory because Streamit rerun teh script every time the user change something.
 def get_data():
     return cleaning(load_data())  # Return the cleaned dataset
@@ -35,7 +38,7 @@ def get_options():   # The purpose of this function is to have a unique list of 
 
 
 
-
+#-----------------------------------------------------------------------------------------------------------------------
 def apply_filters(df, years, contienent, territories, airports) :   # We keep only the lines that match with the filter.
     # Year in paramete is a tuple with the min and max year of the filter.
     # .between(*years) take the year in th df between the 2 part of the year filter.
@@ -46,7 +49,6 @@ def apply_filters(df, years, contienent, territories, airports) :   # We keep on
         # We keep the line if the departure and the
     if airports : # Same thing for the airports.
         out = out[out["departure_airport"].isin(airports) | out["destination_airport"].isin(airports)]
-
     return out
 
 
@@ -61,8 +63,6 @@ with st.sidebar:    # This part is for the sidebar of the streamlit.
     st.markdown("thomas.bottalico@efrei.net")
     st.markdown("Ingénieur Data")
     st.markdown("Année : 2026-2027")
-
-
 
     st.header(tr("Filtres"))
 
@@ -82,14 +82,13 @@ with st.sidebar:    # This part is for the sidebar of the streamlit.
     airports = st.multiselect(tr("Aéroport"), all_airports, key="f_apt")
     # Same things for the airport.
 
+
     st.markdown(tr("<br>Nom du cours : Data Analysis & Visualization"), unsafe_allow_html=True)
     st.markdown("Code du module : ST2DVZ-2627PSA01", unsafe_allow_html=True)
     st.markdown("Référent : [Mathew Mano Joseph](https://www.linkedin.com/in/manomathew/)")
     st.markdown("[Linkedin](https://www.linkedin.com/in/thomas-bottalico/)", unsafe_allow_html=True)
     st.markdown("[Github](https://github.com/ThomasB395) <br><br>", unsafe_allow_html=True)
     st.image("assets/logo_efrei_paris.png", width=300)
-
-
 
 
 
@@ -105,7 +104,7 @@ if df_f.empty :         # If the dataframe of the filter is empty, we stop the s
 
 
 
-
+#-----------------------------------------------------------------------------------------------------------------------
 has_ref = {2018, 2025} <= set(df_f["year"])
 # Is True if the 2 value are in the set of the year of the filter dataset
 # We nedd this because some visualisation need this year for a good functioning.
@@ -113,8 +112,9 @@ if not has_ref :       #If the 2 years are not in the filter dataset, we display
     st.info(tr("Certains graphiques doivent inclure les années 2018 et 2025 dans la plage d'années (année de référence et année finale)."))
 
 
-tables = make_tables(df_f)
 
+#-----------------------------------------------------------------------------------------------------------------------
+tables = make_tables(df_f)
 intro.render(df_f, tables)
 st.divider()
 Story1.render(df_f, tables)

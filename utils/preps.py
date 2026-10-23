@@ -15,12 +15,12 @@ RENAME = {
     'PAP_PAX_FS': 'direct_passengers_onboard',
     'PAP_FRP_FS': 'direct_freight_and_mail_tons'}
 
-
-
 metropole_domtom = {"France métropolitaine", "La Réunion", "Guadeloupe", "Martinique", "Guyane", "Mayotte", "Polynésie française", "Nouvelle-Calédonie", "Saint-Barthélemy", "Saint-Martin", "Saint-Pierre-et-Miquelon", "Wallis-et-Futuna"}
 continent = {"FR": "France métropolitaine", "RE": "La Réunion", "GP": "Guadeloupe", "MQ": "Martinique", "GF": "Guyane", "YT": "Mayotte", "PF": "Polynésie française", "NC": "Nouvelle-Calédonie","BL": "Saint-Barthélemy", "MF": "Saint-Martin", "PM": "Saint-Pierre-et-Miquelon", "WF": "Wallis-et-Futuna"}
 
 
+
+#-----------------------------------------------------------------------------------------------------------------------
 def add_features(data, airport_ref) :  # The purpose is to add nex feature in the two dataset
     df = data.copy()
     ref = airport_ref.set_index("apt")
@@ -38,6 +38,7 @@ def add_features(data, airport_ref) :  # The purpose is to add nex feature in th
 
 
 
+#-----------------------------------------------------------------------------------------------------------------------
 def cleaning (data) :   # The purpose is to clean the data for the vizualisation.
     df = data.copy()
 
@@ -67,6 +68,7 @@ def cleaning (data) :   # The purpose is to clean the data for the vizualisation
 
 
 
+#-----------------------------------------------------------------------------------------------------------------------
 def route_label (df) : # The purpose is to give the airport pair route
     return df["departure_airport"] + " -> " + df["destination_airport"]
 

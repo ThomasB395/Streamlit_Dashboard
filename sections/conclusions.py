@@ -29,6 +29,8 @@ DEFINITIONS = pd.DataFrame([
 ], columns=["Variable", "Colonne source", "Unité", "Définition"])
 
 
+
+#-----------------------------------------------------------------------------------------------------------------------
 def _tr_table(d, cols=()):  # Translate the column names and the text cells of the given columns.
     d = d.copy()
     for c in cols:
